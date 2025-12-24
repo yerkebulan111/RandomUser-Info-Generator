@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Random User Info</h1>
+            <p>Discover random users and their country information</p>
+        </header>
+
+        <div class="button-container">
+            <button id="fetchUserBtn" class="fetch-btn">
+                <span id="btnText">Generate Random User</span>
+                <span id="btnLoader" class="loader hidden"></span>
+            </button>
+        </div>
+
+        <div id="errorMessage" class="error-message hidden"></div>
+
+        <div id="content" class="content hidden">
+            <!-- User Info -->
+            <section class="card user-card">
+                <h2 class="section-title">User Information</h2>
+                <div class="user-info">
+                    <img id="userPicture" src="" alt="User Picture" class="user-picture">
+                    <div class="user-details">
+                        <div class="detail-item">
+                            <span class="label">Name:</span>
+                            <span id="userName"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Gender:</span>
+                            <span id="userGender"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Age:</span>
+                            <span id="userAge"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Date of Birth:</span>
+                            <span id="userDob"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Address:</span>
+                            <span id="userAddress"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">City:</span>
+                            <span id="userCity"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Country:</span>
+                            <span id="userCountry"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Country Info -->
+            <div class="two-column">
+                <section class="card country-card">
+                    <h2 class="section-title">Country Information</h2>
+                    <div class="country-info">
+                        <img id="countryFlag" src="" alt="Country Flag" class="country-flag">
+                        <div class="country-details">
+                            <div class="detail-item">
+                                <span class="label">Country:</span>
+                                <span id="countryName"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Capital:</span>
+                                <span id="countryCapital"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Languages:</span>
+                                <span id="countryLanguages"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Currency:</span>
+                                <span id="countryCurrency"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Exchange Rates -->
+                <section class="card exchange-card">
+                    <h2 class="section-title">Exchange Rates</h2>
+                    <div class="exchange-info">
+                        <div class="exchange-item">
+                            <span class="exchange-label">To USD:</span>
+                            <span id="rateUSD" class="exchange-value"></span>
+                        </div>
+                        <div class="exchange-item">
+                            <span class="exchange-label">To KZT:</span>
+                            <span id="rateKZT" class="exchange-value"></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- News -->
+            <section class="card news-section">
+                <h2 class="section-title">Latest News</h2>
+                <div id="newsContainer" class="news-container"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
