@@ -154,7 +154,7 @@ http://localhost:3000
   - `pageSize`: 5
 - **Data Extracted**: Headlines, images, descriptions, URLs
 
-## 🎨 Design Decisions
+## Design Decisions
 
 ### Backend Architecture
 - **Single Endpoint Design**: All API calls are made in one endpoint (`/api/user-data`) to minimize frontend complexity and ensure data consistency
